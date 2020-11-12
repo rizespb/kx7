@@ -1,0 +1,164 @@
+.booking {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    transition: all .3s;
+    
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,.3);
+
+    justify-content: center;
+    align-items: center;
+
+    // Стиль раскрывает форму на весь экран
+    &--active {
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+    }
+
+    &__form-container {
+        width: 80%;
+        background-image: linear-gradient(115deg,rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 60%, transparent 60%), url(../img/background-muffler.jpg);
+        background-size: cover;
+        background-position: bottom;
+        border-radius: 5px;
+        padding: 3rem 5rem;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+
+        transition: all .3s;
+
+
+        & > *:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        &__heading-2 {
+            text-align: left;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        &__choice {
+            display: flex;
+
+            &--group {
+                margin-right: 5rem;
+
+            }
+
+            &--radio {
+                display: none;
+            }
+
+            &--label {
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--color-primary);
+                cursor: pointer;
+            }
+
+            &--radio-btn {
+                display: inline-block;
+                position: relative;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                border: 5px solid var(--color-primary);
+                margin-right: 1.5rem;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    background-color: var(--color-primary);
+                }
+            }
+
+            &--radio:checked + &--label &--radio-btn::after {
+                opacity: 1;
+            }
+        }
+
+        &__input {
+            height: 4rem;
+            width: 100%;
+            padding: .5rem 1rem;
+            outline: none;
+            border: none;
+            box-shadow: var(--shadow-light);
+            border-radius: 5px;
+            border: 2px solid rgba(0,0,0,0);
+            font-size: 2rem;
+
+            &:focus {
+                outline: none;
+                border-color: var(--color-primary);
+            }
+        }
+
+        &__btn {
+            cursor: pointer;
+            color: var(--color-white);
+            font-size: 2rem;
+            background-color: var(--color-primary);
+            padding: .5rem 2rem;
+            border-radius: 5px;
+        }
+
+        &__consent {
+
+            &--link {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    &__close {
+        position: absolute;
+        display: block;
+        top: 3rem;
+        right: 3rem;
+        font-size: 5rem;
+        text-decoration: none;
+        color: var(--color-primary);
+        cursor: pointer;
+        transition: all .1s;
+    }
+
+    &__close:hover {
+        color: var(--color-orange);
+        transform: scale(1.2);
+    }
+}   
+
+// Поле input для защиты от нежелательной почты
+
+#id-control-field {
+    display: none;
+    position: absolute;
+    left: -9999px;
+}

@@ -1,0 +1,32 @@
+:root{
+///// FONTS /////
+--font-display: 'Roboto', sans-serif;
+--font-primary: 'PT Sans', sans-serif;
+--font-secondary: 'Ubuntu', sans-serif;
+
+///// COLORS /////
+--color-grey-dark: #1f1f1f;
+--color-grey-light: #777;
+--color-primary: #007dad;
+--color-white: #fff;
+--color-orange: #FFB600;
+--color-red: #FF2C00;
+--color-valid: #55c57a;
+
+///// SHADOWS /////
+--shadow-light: .5rem .5rem 2rem rgba(0,0,0,.3);
+--shadow-input: 0 0 2rem rgba(0,0,0,.3);
+--img-shadow-light: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+--img-shadow-large: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+
+
+--header-height: 7rem;
+--max-width: 200rem;
+}
+
+// RESPOSIVE PREAKPOINTS
+$bp-largest: 110em;   // 1760px 
+$bp-large: 75em;   // 1200px 
+$bp-medium: 62.5em;    // 1000px
+$bp-small: 50em;   // 800px
+$bp-smallest: 37.5em;   // 600px

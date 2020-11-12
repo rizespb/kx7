@@ -1,0 +1,18 @@
+.btn {
+    outline: none;
+    border: none;
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+
+    
+
+    &:active {
+        transform: translateY(3px);
+    }
+
+    &--black {
+            background-color: var(--color-grey-dark);
+    }
+}

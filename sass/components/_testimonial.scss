@@ -1,0 +1,67 @@
+.testimonial {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .8);
+    width: 65%;
+    padding: 2rem;
+
+    &:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+
+    &__user {
+        clip-path: circle(50% at 50% 50%);
+        width: 10rem;
+        height: 10rem;
+
+        position: relative;
+
+
+        &--img {
+            height: 100%;
+        }
+
+        &--name {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 90%);
+            opacity: 0;
+
+            text-align: center;
+            color: var(--color-white);
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.5rem;
+            transition: all .7s;
+        }
+
+        &:hover &--name {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover &--img {
+            filter: blur(3px) brightness(80%);
+        }
+    }
+
+    &__text {
+        margin-left: 5rem;
+        position: relative;
+        z-index: 3;
+
+        &::before {
+            content: "\201C";
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 30rem;
+            color: var(--color-grey-light);
+            opacity: 0.3;
+            top: -16rem;
+            left: -1.5rem;
+            z-index: 1;
+        }
+    }
+}

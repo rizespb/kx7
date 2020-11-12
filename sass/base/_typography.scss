@@ -1,0 +1,36 @@
+.heading-1 {
+    color: var(--color-white);
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.heading-2 {
+    color: var(--color-white);
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.heading-3 {
+    color: var(--color-grey-dark);
+    font-family: var(--font-display);
+    letter-spacing: .7px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+
+.color-primary {
+    color: var(--color-primary);
+}   
+
+.color-grey {
+    color: var(--color-grey-dark);
+}

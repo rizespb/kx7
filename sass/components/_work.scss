@@ -1,0 +1,40 @@
+.work {
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: var(--shadow-light);
+    overflow: hidden;
+
+    &__img-box {
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+
+        transition: all 1.5s;
+    }
+
+    &__model {
+        transform: translateY(-50%);
+        width: 80%;
+        background-color: var(--color-primary);
+        text-align: center;
+        padding: 1rem;
+        font-family: var(--font-display);
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--color-white);
+    }
+
+    &__description {
+        padding-bottom: 1rem;
+    }
+
+    &:hover &__img {
+        transform: scale(1.2);
+    }
+}

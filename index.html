@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="resources/favicon/favicon.png">
+
+        
+        <title>Берндирование автомобилей и оклейка витрин в Санкт-Петербург</title>
+    </head>
+
+    <body class="container">
+
+
+        <header class="header">
+                <div class="header__logo-box">
+                    <a href="/" class="header__logo">
+                        <span class="color-primary">kx7.ru</span><span class="color-grey">Оклейка</span>
+                    </a>
+                    <a href="tel:+78129999999" class="header__tel">+7 (812) 999-99-99</a>
+                </div>
+            
+                <nav class="navigation" id="id-navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#id-section-list-auto" class="navigation__link">Услуги</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#id-section-auto-price" class="navigation__link">Стоимость</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#section-testimonials" class="navigation__link">Отзывы</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#section-images" class="navigation__link">Какая-то кнопка</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#section-address" class="navigation__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="header__order-btn btn btn--black" id="id-booking-open-btn">Узнать стоимость</button>
+
+                <div class="menu-btn" id="id-menu-btn">
+                    <div class="menu-btn__icon" id="id-menu-btn__icon"></div>
+                </div>
+        </header>
+
+        <section class="section-head section">
+            <h1 class="heading-1">
+                <span class="color-primary">Наши</span>
+                <span class="color-grey">услуги</span>
+            </h1>
+
+            <div class="section-head__content">
+                <div class="section-head__service">
+                    <div class="section-head__service--heading">Оклейка автомобилей</div>
+                    <img src="img/service-car.jpg" alt="Изображение оклейка автомобилей" class="section-head__service--image">
+                    <a href="#" class="section-head__service--more-details">Подробнее<i class="fas fa-angle-double-down"></i></a>
+                </div>
+
+                <div class="section-head__service">
+                    <div class="section-head__service--heading color-primary">Оклейка витрин</div>
+                    <img src="img/service-window.jpg" alt="Изображение оклейка автомобилей" class="section-head__service--image">
+                    <a href="#" class="section-head__service--more-details">Подробнее<i class="fas fa-angle-double-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-list section" id="id-section-list-auto">
+            <h1 class="heading-1">
+                <span class="color-grey">Какие автомобили мы</span>
+                <span class="color-primary">брендируем и оклеиваем</span>
+            </h1>
+
+            <div class="section-list__content">
+                <div class="section-list__content--item">
+                    <i class="section-list__content--icon fas fa-crosshairs"></i>
+                    <p class="section-list__content--text">Легковые автомобили</p>
+                </div>
+                <div class="section-list__content--item">
+                    <i class="section-list__content--icon fas fa-crosshairs"></i>
+                    <p class="section-list__content--text">Коммерческий транспорт</p>
+                </div>
+                <div class="section-list__content--item">
+                    <i class="section-list__content--icon fas fa-crosshairs"></i>
+                    <p class="section-list__content--text">Такси</p>
+                </div>
+                <div class="section-list__content--item">
+                    <i class="section-list__content--icon fas fa-crosshairs"></i>
+                    <p class="section-list__content--text">Корпоративный транспорт</p>
+                </div>
+                <div class="section-list__content--item">
+                    <i class="section-list__content--icon fas fa-crosshairs"></i>
+                    <p class="section-list__content--text">Спецтехнику</p>
+                </div>
+                <div class="section-list__content--item">
+                    <i class="section-list__content--icon fas fa-crosshairs"></i>
+                    <p class="section-list__content--text">Любую другую технику</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-auto-price section" id="id-section-auto-price">
+            <h1 class="heading-1">
+                <span class="color-primary">Стоимость</span>
+                <span class="color-grey">оклейки</span>
+            </h1>
+
+            <div class="section-auto-price__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel inventore magnam quidem dicta molestias aliquam consectetur quia doloribus natus nisi, tempora non quisquam et beatae ad earum vitae in. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+            <div class="section-auto-price__prices-box">
+                <div class="price-card">
+                    <div class="price-card__set-name">Лайт</div>
+                    <img src="img/price-card-img.jpg" alt="Set image" class="price-card__image">
+                    <div class="price-card__description">
+                        <p class="price-card__description--text">В пакет входит оклейка следующих элементов:</p>
+                        <ul class="price-card__description--list">
+                            <li><i class="far fa-check-circle"></i>Две двери</li>
+                            <li><i class="far fa-check-circle"></i>Капот</li>
+                        </ul>
+                    </div>
+                    <div class="price-card__price">7000 ₽</div>
+                    <div class="price-card__btn">Выбрать</div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card__set-name">Стандарт</div>
+                    <img src="img/price-card-img.jpg" alt="Set image" class="price-card__image">
+                    <div class="price-card__description">
+                        <p class="price-card__description--text">В пакет входит оклейка следующих элементов:</p>
+                        <ul class="price-card__description--list">
+                            <li><i class="far fa-check-circle"></i>Две двери</li>
+                            <li><i class="far fa-check-circle"></i>Капот</li>
+                        </ul>
+                    </div>
+                    <div class="price-card__price">7000 ₽</div>
+                    <div class="price-card__btn">Выбрать</div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card__set-name">Оптима</div>
+                    <img src="img/price-card-img.jpg" alt="Set image" class="price-card__image">
+                    <div class="price-card__description">
+                        <p class="price-card__description--text">В пакет входит оклейка следующих элементов:</p>
+                        <ul class="price-card__description--list">
+                            <li><i class="far fa-check-circle"></i>Две двери</li>
+                            <li><i class="far fa-check-circle"></i>Капот</li>
+                        </ul>
+                    </div>
+                    <div class="price-card__price">7000 ₽</div>
+                    <div class="price-card__btn">Выбрать</div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card__set-name">Максимум</div>
+                    <img src="img/price-card-img.jpg" alt="Set image" class="price-card__image">
+                    <div class="price-card__description">
+                        <p class="price-card__description--text">В пакет входит оклейка следующих элементов:</p>
+                        <ul class="price-card__description--list">
+                            <li><i class="far fa-check-circle"></i>Две двери</li>
+                            <li><i class="far fa-check-circle"></i>Капот</li>
+                        </ul>
+                    </div>
+                    <div class="price-card__price">7000 ₽</div>
+                    <div class="price-card__btn">Выбрать</div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="section-how-we-work section">
+            <h1 class="heading-1">
+                <span class="color-grey">Как мы </span>
+                <span class="color-primary">работаем</span>
+            </h1>
+
+            <div class="work-scheme">
+                <div class="work-scheme__step">
+                    <div class="work-scheme__step--number">1</div>
+                    <div class="work-scheme__step--description">Заявка или звонок</div>
+                </div>
+                <div class="work-scheme__step">
+                    <div class="work-scheme__step--number">2</div>
+                    <div class="work-scheme__step--description">Согласование дизайна</div>
+                </div>
+                <div class="work-scheme__step">
+                    <div class="work-scheme__step--number">3</div>
+                    <div class="work-scheme__step--description">Договор и оплата</div>
+                </div>
+                <div class="work-scheme__step">
+                    <div class="work-scheme__step--number">4</div>
+                    <div class="work-scheme__step--description">Изготовление изображение</div>
+                </div>
+                <div class="work-scheme__step">
+                    <div class="work-scheme__step--number">5</div>
+                    <div class="work-scheme__step--description">Заявка или звонок</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-works section" id="section-works">
+            <h1 class="heading-1">
+                <span class="color-primary">Наши </span>
+                <span class="color-grey">работы</span>
+            </h1>
+
+            <div class="section-works__work-box">
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-1.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-2.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-3.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-4.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-5.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-6.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-7.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-8.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-9.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+                <div class="work">
+                    <div class="work__img-box">
+                        <img src="img/car-10.jpg" alt="Automobile image" class="work__img">
+                    </div>
+                    <div class="work__model">Ford GT 713</div>
+                    <div class="work__description">ИЗГОТОВЛЕНИЕ DOWNPIPE 63 MM</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-testimonials section" id="section-testimonials">
+            <h1 class="heading-1">Отзывы наших клиентов</h1>
+
+            <div class="section-testimonials__testimonials-box">
+                <div class="testimonial">
+                    <figure class="testimonial__user">
+                        <img src="img/users/user-1.jpg" alt="Виктор К." class="testimonial__user--img">
+                        <figcaption class="testimonial__user--name">Виктор К.</figcaption>
+                    </figure>
+                    <p class="testimonial__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam magnam ipsa quam, dicta vel quas exercitationem totam! Fuga dolores quasi voluptas incidunt nulla eveniet, suscipit numquam maxime accusamus minima!</p>
+                </div>
+                <div class="testimonial">
+                    <figure class="testimonial__user">
+                        <img src="img/users/user-2.jpg" alt="" class="testimonial__user--img">
+                        <figcaption class="testimonial__user--name">Светлана В.</figcaption>
+                    </figure>
+                    <p class="testimonial__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam magnam ipsa quam, dicta vel quas exercitationem totam! Fuga dolores quasi voluptas incidunt nulla eveniet, suscipit numquam maxime accusamus minima!</p>
+                </div>
+                <div class="testimonial">
+                    <figure class="testimonial__user">
+                        <img src="img/users/user-3.jpg" alt="" class="testimonial__user--img">
+                        <figcaption class="testimonial__user--name">Андрей Т.</figcaption>
+                    </figure>
+                    <p class="testimonial__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam magnam ipsa quam, dicta vel quas exercitationem totam! Fuga dolores quasi voluptas incidunt nulla eveniet, suscipit numquam maxime accusamus minima!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-images section" id="section-images">
+            <h1 class="heading-1"><span class="color-grey">Какой-то</span><span class="color-primary">интересный заголовок</span></h1>
+            <div class="section-images__content">
+                <div class="section-images__text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil laborum voluptatum minima quod beatae aliquid officia possimus, velit eum voluptas aut labore ipsum praesentium eligendi ipsa. Illum animi deserunt sint? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Sapiente possimus tempore ex exercitationem culpa laudantium quo repellendus molestias, ipsam modi eos corporis reprehenderit expedita in obcaecati aliquam atque sit quisquam.</p>
+                </div>
+                <div class="composition">
+                    <img src="img/composition-img-1.jpg" alt="Beautiful image" class="composition__img composition__img--1">
+                    <img src="img/composition-img-2.jpg" alt="Beautiful image" class="composition__img composition__img--2">
+                    <img src="img/composition-img-3.jpg" alt="Beautiful image" class="composition__img composition__img--3">
+                </div>
+            </div>
+        </section>
+
+        <address class="section-address section" id="section-address">
+            <div class="contacts">
+                <h2 class="heading-2">Как нас найти</h2>
+                <div class="contacts__block">
+                    <h3 class="heading-3">Адрес</h3>
+                    <p class="contacts__block-text">
+                        Санкт-Петербург, ул. Софийская, дом 44
+                    </p>
+                </div>
+                <div class="contacts__block">
+                    <h3 class="heading-3">Телефон</h3>
+                    <p class="contacts__block-text">
+                        +7 (812) 900-00-00
+                    </p>
+                </div>
+                <div class="contacts__block">
+                    <h3 class="heading-3">Электропочта</h3>
+                    <p class="contacts__block-text">
+                        info@muffler.com
+                    </p>
+                </div>
+                <div class="contacts__block">
+                    <h3 class="heading-3">Мы в соцсетях</h3>
+
+                    <div class="contacts__icon-box">
+                        <a href="#" class="contacts__link">
+                            <svg class="contacts__icon">
+                                <use xlink:href="resources/svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <svg class="contacts__icon">
+                                <use xlink:href="resources/svg/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e690162693fe16ebf02ea87cb2c82c37114c380c0832573e9b2ea53f35f3d0f&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </address>
+
+        <div class="booking" id="id-booking">
+            <div class="booking__form-container">
+
+                <form class="booking-form" autocomplete="off" id="id-booking-form"> 
+
+                <h2 class="booking-form__heading-2 heading-2">Консультация</h2>
+                <h3 class="booking-form__heading-3 heading-3">Что оклеиваем?</h3>
+
+                <div class="booking-form__choice">
+                    <div class="booking-form__choice--group">
+                        <input type="radio" class="booking-form__choice--radio" id="id-booking-form__auto" name="typeOfWork" value="Оклейка транспорта" required>
+                        <label for="id-booking-form__auto" class="booking-form__choice--label">
+                            <span class="booking-form__choice--radio-btn"></span>
+                            Транспорт
+                        </label>
+                    </div>
+
+                    <div class="booking-form__choice--group">
+                        <input type="radio" class="booking-form__choice--radio" id="id-booking-form__windows" name="typeOfWork" value="Оклейка витрин" required>
+                        <label for="id-booking-form__windows" class="booking-form__choice--label">
+                            <span class="booking-form__choice--radio-btn"></span>
+                            Витрина
+                        </label>
+                    </div>
+                </div>
+
+                <input type="text" class="booking-form__input" id="id-booking-form__name" placeholder="Ваше имя" required>
+                <input type="text" class="booking-form__input" id="id-booking-form__tel" placeholder="Ваш телефон">
+                <input type="text" class="booking-form__input" id="id-booking-form__email" placeholder="Электронная почта">
+                <input id="id-control-field">
+                <div class="booking-form__result" id="id-booking-form__result"></div>
+
+                <div class="booking-form__btn" id="id-booking-form__btn">Узнать стоимость</div>
+                <p class="booking-form__consent">Нажимая кнопку «Бронировать», Вы даете свое согласие на обработку персональных данных в соответствии с <a href="/resources/politika-konfidencialnosti-kx7.ru.pdf" class="booking-form__consent--link" target="_blank">политикой конфиденциальности</a>.</p>
+
+                </form>
+                <i class="fas fa-times booking__close" id="id-booking-close-btn"></i>
+            </div>
+        </div>
+
+        <script src="javascript/script.js"></script>    
+        <script src="javascript/lazy-scroll.js"></script>
+        <script src="javascript/sendmail.js"></script>
+        
+    </body>
+</html>
