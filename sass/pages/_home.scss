@@ -60,19 +60,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
 
         &--item {
             width: 30%;
             display: flex;
             align-items: center;
             font-size: 2.7rem;
-            padding: 3rem 1rem;
+            padding: 1rem 1rem;
         }
 
-        &--icon {
+        &--icon-svg {
             font-size: 4rem;
+            fill: var(--color-orange);
             margin-right: 1.5rem;
-            color: var(--color-primary);
+            width: 7rem;
         }
 
         &--text {
