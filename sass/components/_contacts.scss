@@ -1,5 +1,6 @@
 .contacts {
     width: 40%;
+    font-family: var(--font-display);
     
     & > .heading-2 {
         color: var(--color-primary);
@@ -34,7 +35,7 @@
         
 
         &:hover {
-            fill: orangered;
+            fill: var(--color-orange);
         }
     }
 }

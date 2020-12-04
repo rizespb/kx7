@@ -4,6 +4,7 @@
   --font-secondary: 'Ubuntu', sans-serif;
   --color-grey-dark: #1f1f1f;
   --color-grey-light: #777;
+  --color-grey-superlight: rgb(231, 231, 231);
   --color-primary: #007dad;
   --color-white: #fff;
   --color-orange: #FFB600;
@@ -91,8 +92,7 @@ body {
   height: 100vh;
   z-index: 1000;
   transition: all .3s;
-  backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center; }
   .booking--active {
@@ -209,7 +209,8 @@ body {
     background-color: var(--color-grey-dark); }
 
 .contacts {
-  width: 40%; }
+  width: 40%;
+  font-family: var(--font-display); }
   .contacts > .heading-2 {
     color: var(--color-primary);
     text-align: left; }
@@ -227,7 +228,7 @@ body {
     height: 5rem;
     transition: all .3s; }
     .contacts__icon:hover {
-      fill: orangered; }
+      fill: var(--color-orange); }
 
 .composition {
   width: 60%;
@@ -271,6 +272,8 @@ body {
   font-family: var(--font-display); }
   .price-card:not(:last-child) {
     margin-right: 5rem; }
+  .price-card:hover, .price-card:active {
+    transform: translateY(-15px); }
   .price-card__set-name {
     font-size: 2rem;
     font-weight: 500;
@@ -280,7 +283,7 @@ body {
     height: auto; }
   .price-card__description {
     padding: .5rem 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     flex-grow: 1; }
     .price-card__description--text {
       line-height: 110%;
@@ -293,7 +296,7 @@ body {
     font-size: 2.7rem;
     font-weight: 500;
     color: var(--color-primary);
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .price-card__btn {
     border-radius: 30px;
     background-color: var(--color-primary);
@@ -440,7 +443,8 @@ body {
   .testimonial__text {
     margin-left: 5rem;
     position: relative;
-    z-index: 3; }
+    z-index: 3;
+    font-size: 1.6rem; }
     .testimonial__text::before {
       content: "\201C";
       position: absolute;
@@ -637,10 +641,14 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 7rem; }
+  .section-auto-price > .heading-1 {
+    margin-bottom: 3rem; }
   .section-auto-price__text {
     text-align: center;
     margin-bottom: 3rem;
-    max-width: 70%; }
+    max-width: 90%;
+    font-family: var(--font-display);
+    font-size: 1.2rem; }
   .section-auto-price__prices-box {
     width: 100%;
     display: flex;
@@ -684,7 +692,8 @@ body {
   max-width: 114rem;
   width: 100%;
   padding-top: 5rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 10rem;
+  font-family: var(--font-display); }
   .section-images__content {
     display: flex;
     margin-top: 3rem;
@@ -703,3 +712,8 @@ body {
   align-items: center;
   font-style: normal;
   margin-bottom: 3rem; }
+
+.footer {
+  width: 100%;
+  padding: 2rem 5rem;
+  background-color: var(--color-grey-superlight); }

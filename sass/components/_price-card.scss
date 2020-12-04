@@ -18,6 +18,11 @@
         margin-right: 5rem;
     }
 
+    &:hover,
+    &:active {
+        transform: translateY(-15px);
+    }
+
     &__set-name {
         font-size: 2rem;
         font-weight: 500;
@@ -31,7 +36,7 @@
 
     &__description {
         padding: .5rem 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         flex-grow: 1;
         
         &--text {
@@ -52,7 +57,7 @@
         font-size: 2.7rem;
         font-weight: 500;
         color: var(--color-primary);
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     &__btn {
