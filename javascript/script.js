@@ -36,3 +36,5 @@ let navItemsArray = [...document.querySelectorAll('.navigation__item')];
 navItemsArray.forEach(item => {
     item.addEventListener('click', hideNavigation);
 });
+
+document.getElementById('id-booking-open-shopwindow').addEventListener('click', showHideOrderForm);

@@ -18,7 +18,7 @@ if(isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && strtolower($_SERVER["HTTP_X_REQUE
 		//Описываем фукнцию отправки сообщения
 		function send_form($message) {
 	
-			$mail_to = "rizespb@yandex.ru"; // Адрес, куда отправляем письма
+			$mail_to = "info@kx7.ru"; // Адрес, куда отправляем письма
 			$subject = "Письмо с сайта kx7.ru"; // Тема письма
 			$headers = "MIME-Version: 1.0\r\n";
 			$headers .= "Content-type: text/html; charset=utf-8\r\n";

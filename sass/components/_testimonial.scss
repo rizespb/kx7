@@ -9,6 +9,11 @@
         margin-bottom: 5rem;
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+        width: 95%;
+        padding: .5rem;
+    }
+
     &__user {
         clip-path: circle(50% at 50% 50%);
         width: 10rem;
@@ -52,6 +57,10 @@
         position: relative;
         z-index: 3;
         font-size: 1.6rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-left: 1rem;
+        }
 
         &::before {
             content: "\201C";

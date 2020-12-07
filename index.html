@@ -15,7 +15,7 @@
     <link rel="shortcut icon" type="image/png" href="resources/favicon/favicon.png">
 
 
-    <title>Берндирование автомобилей и оклейка витрин в Санкт-Петербург</title>
+    <title>Брендирование автомобилей и оклейка витрин в Санкт-Петербург</title>
 </head>
 
 <body class="container">
@@ -29,22 +29,24 @@
             <a href="tel:+78126494845" class="header__tel">+7 (812) 649-48-45</a>
         </div>
 
+
+        <!-- В навигации вначале якорной ссылки добавлено ls- для того, чтобы работал lazy-scroll на главной странице. Скрипт lazy-scroll.js выбирает все якорные ссылки, которые начинаются с #ls, тем самым отделяются якорные ссылки на другие страницы, например, /shopwindow.html#id-shopwindow. Иначе lazy-scroll выдает ошибку -->
         <nav class="navigation" id="id-navigation">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a href="#id-section-list-auto" class="navigation__link">Услуги</a>
+                    <a href="#ls-section-list-auto" class="navigation__link">Услуги</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#id-section-auto-price" class="navigation__link">Стоимость</a>
+                    <a href="#ls-section-auto-price" class="navigation__link">Стоимость</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#section-testimonials" class="navigation__link">Отзывы</a>
+                    <a href="#ls-section-testimonials" class="navigation__link">Отзывы</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#section-images" class="navigation__link">О нас</a>
+                    <a href="#ls-section-images" class="navigation__link">О нас</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#section-address" class="navigation__link">Контакты</a>
+                    <a href="#ls-section-address" class="navigation__link">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -64,10 +66,10 @@
 
         <div class="section-head__content">
             <div class="section-head__service">
-                <div class="section-head__service--heading">Оклейка автомобилей</div>
+                <div class="section-head__service--heading">Оклейка и брендирование автомобилей</div>
                 <img src="img/service-car.jpg" alt="Изображение оклейка автомобилей"
                     class="section-head__service--image">
-                <a href="#id-section-list-auto" class="section-head__service--more-details">Подробнее<i
+                <a href="#ls-section-list-auto" class="section-head__service--more-details">Подробнее<i
                         class="fas fa-angle-double-down"></i></a>
             </div>
 
@@ -75,13 +77,13 @@
                 <div class="section-head__service--heading color-primary">Оклейка витрин и помещений</div>
                 <img src="img/service-window.jpg" alt="Изображение оклейка автомобилей"
                     class="section-head__service--image">
-                <a href="#" class="section-head__service--more-details">Подробнее<i
+                <a href="/shopwindow.html#id-shopwindow" class="section-head__service--more-details">Подробнее<i
                         class="fas fa-angle-double-down"></i></a>
             </div>
         </div>
     </section>
 
-    <section class="section-list section" id="id-section-list-auto">
+    <section class="section-list section" id="ls-section-list-auto">
         <h1 class="heading-1">
             <span class="color-grey">Какие автомобили мы</span>
             <span class="color-primary">брендируем и оклеиваем</span>
@@ -129,7 +131,7 @@
 
 
 
-    <section class="section-auto-price section" id="id-section-auto-price">
+    <section class="section-auto-price section" id="ls-section-auto-price">
         <h1 class="heading-1">
             <span class="color-primary">Стоимость</span>
             <span class="color-grey">оклейки</span>
@@ -207,7 +209,10 @@
             </div>
         </div>
 
-        <div class="section-auto-price__text">Указана стоимость для нанесения рекламных материалов на легковые автомобили. Стоимость оклейки крупногабаритного транспорта или спецтехники уточняйте по указанным на сайте компаниям. Указанные цены являются ориентировочными и не являются публичной офертой, которая определяется положениями статьи 437 Гражданского кодекса РФ.</div>
+        <div class="section-auto-price__text">Указана стоимость для нанесения рекламных материалов на легковые
+            автомобили. Стоимость оклейки крупногабаритного транспорта или спецтехники уточняйте по указанным на сайте
+            компаниям. Указанные цены являются ориентировочными и не являются публичной офертой, которая определяется
+            положениями статьи 437 Гражданского кодекса РФ.</div>
     </section>
 
     <section class="section-how-we-work section">
@@ -231,11 +236,11 @@
             </div>
             <div class="work-scheme__step">
                 <div class="work-scheme__step--number">4</div>
-                <div class="work-scheme__step--description">Изготовление изображение</div>
+                <div class="work-scheme__step--description">Изготовление изображения</div>
             </div>
             <div class="work-scheme__step">
                 <div class="work-scheme__step--number">5</div>
-                <div class="work-scheme__step--description">Заявка или звонок</div>
+                <div class="work-scheme__step--description">Нанесение на авто</div>
             </div>
         </div>
     </section>
@@ -320,44 +325,44 @@
         </div>
     </section> -->
 
-    <section class="section-testimonials section" id="section-testimonials">
-        <h1 class="heading-1">Отзывы наших клиентов</h1>
+    <section class="section-images section" id="ls-section-images">
+        <h1 class="heading-1"><span class="color-grey">Немного информации </span><span class="color-primary">о нашей
+                компании</span></h1>
 
-        <div class="section-testimonials__testimonials-box">
-            <div class="testimonial">
-                <figure class="testimonial__user">
-                    <img src="img/users/user-1.jpg" alt="Виктор К." class="testimonial__user--img">
-                    <figcaption class="testimonial__user--name">Виктор К.</figcaption>
-                </figure>
-                <p class="testimonial__text">Обращался в компанию KX7, чтобы брендировать восемь служебных автомобилей. Делали наненсение рекламы на капот, передние двери и заднее стекло. Два месяца – полет нормальный! Работу сделали быстро: меньше, чем за один день. Спасибо!</p>
-            </div>
-            <div class="testimonial">
-                <figure class="testimonial__user">
-                    <img src="img/users/user-2.jpg" alt="" class="testimonial__user--img">
-                    <figcaption class="testimonial__user--name">Светлана В.</figcaption>
-                </figure>
-                <p class="testimonial__text">Выражаю благодарность коллективу KX7 за отличное качество проделанной работы и за приятное общение!</p>
-            </div>
-            <div class="testimonial">
-                <figure class="testimonial__user">
-                    <img src="img/users/user-3.jpg" alt="" class="testimonial__user--img">
-                    <figcaption class="testimonial__user--name">Андрей Т.</figcaption>
-                </figure>
-                <p class="testimonial__text">Вместе с двумя друзьями заказывали наклейки «Нашествие» на заднее стекло. Наклейки были распечатаны заранее. Поэтому, когда приехали, ребята наклеили их минут за 20. Только кофе и успели выпить за это время.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-images section" id="section-images">
-        <h1 class="heading-1"><span class="color-grey">Немного информации </span><span class="color-primary">о нашей компании</span></h1>
         <div class="section-images__content">
-            <div class="section-images__text">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil laborum voluptatum minima quod beatae
-                    aliquid officia possimus, velit eum voluptas aut labore ipsum praesentium eligendi ipsa. Illum animi
-                    deserunt sint? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Sapiente possimus tempore ex exercitationem culpa laudantium quo repellendus molestias, ipsam modi
-                    eos corporis reprehenderit expedita in obcaecati aliquam atque sit quisquam.</p>
-            </div>
+
+            <ul class="section-images__list">
+                <li class="section-images__list-item">
+                    <i class="section-images__list-item--icon far fa-check-square"></i>
+                    <p class="section-images__list-item--text">Мы работаем только с <b>высококачественными пленками.</b>
+                        Поэтому мы НЕ предлагаем Вам тарифы Эконом. Предоставляем только качественное наненсение.</p>
+                </li>
+                <li class="section-images__list-item">
+                    <i class="section-images__list-item--icon far fa-check-square"></i>
+                    <p class="section-images__list-item--text">Мы всегда предоставляем то, что обещаем. Прозрачное
+                        ценообразование и отсутсвие скрытых накруток: стоимость утверждается до начала работ и не
+                        увеличивается в процессе выполнения заказа.</p>
+                </li>
+                <li class="section-images__list-item">
+                    <i class="section-images__list-item--icon far fa-check-square"></i>
+                    <p class="section-images__list-item--text">Широкий ассортимент пленок и цветов.</p>
+                </li>
+                <li class="section-images__list-item">
+                    <i class="section-images__list-item--icon far fa-check-square"></i>
+                    <p class="section-images__list-item--text">Работаем по договору с физическими и юридическими лицами.
+                    </p>
+                </li>
+                <li class="section-images__list-item">
+                    <i class="section-images__list-item--icon far fa-check-square"></i>
+                    <p class="section-images__list-item--text">По договоренности возможем выезд на Ваш объект и оклейка
+                        на месте.</p>
+                </li>
+                <li class="section-images__list-item">
+                    <i class="section-images__list-item--icon far fa-check-square"></i>
+                    <p class="section-images__list-item--text">Профессиональные мастера с опытом работы более 5 лет.</p>
+                </li>
+            </ul>
+
             <div class="composition">
                 <img src="img/composition-img-1.jpg" alt="Beautiful image" class="composition__img composition__img--1">
                 <img src="img/composition-img-2.jpg" alt="Beautiful image" class="composition__img composition__img--2">
@@ -366,7 +371,42 @@
         </div>
     </section>
 
-    <address class="section-address section" id="section-address">
+    <section class="section-testimonials section" id="ls-section-testimonials">
+        <h1 class="heading-1">Отзывы наших клиентов</h1>
+
+        <div class="section-testimonials__testimonials-box">
+            <div class="testimonial">
+                <figure class="testimonial__user">
+                    <img src="img/users/user-1.jpg" alt="Виктор К." class="testimonial__user--img">
+                    <figcaption class="testimonial__user--name">Виктор К.</figcaption>
+                </figure>
+                <p class="testimonial__text">Обращался в компанию KX7, чтобы брендировать восемь служебных автомобилей.
+                    Делали наненсение рекламы на капот, передние двери и заднее стекло. Два месяца – полет нормальный!
+                    Работу сделали быстро: меньше, чем за один день. Спасибо!</p>
+            </div>
+            <div class="testimonial">
+                <figure class="testimonial__user">
+                    <img src="img/users/user-2.jpg" alt="" class="testimonial__user--img">
+                    <figcaption class="testimonial__user--name">Светлана В.</figcaption>
+                </figure>
+                <p class="testimonial__text">Выражаю благодарность коллективу KX7 за отличное качество проделанной
+                    работы и за приятное общение!</p>
+            </div>
+            <div class="testimonial">
+                <figure class="testimonial__user">
+                    <img src="img/users/user-3.jpg" alt="" class="testimonial__user--img">
+                    <figcaption class="testimonial__user--name">Андрей Т.</figcaption>
+                </figure>
+                <p class="testimonial__text">Вместе с двумя друзьями заказывали наклейки «Нашествие» на заднее стекло.
+                    Наклейки были распечатаны заранее. Поэтому, когда приехали, ребята наклеили их минут за 20. Только
+                    кофе и успели выпить за это время.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <address class="section-address section" id="ls-section-address">
         <div class="contacts">
             <h2 class="heading-2">Как нас найти</h2>
             <div class="contacts__block">
@@ -391,12 +431,13 @@
                 <h3 class="heading-3">Мы в соцсетях</h3>
 
                 <div class="contacts__icon-box">
-                    <a href="#" class="contacts__link">
+                    <a href="https://www.instagram.com/redcow_spb/" rel="nofollow" class="contacts__link"
+                        target="_blank">
                         <svg class="contacts__icon">
                             <use xlink:href="resources/svg/sprite.svg#icon-instagram"></use>
                         </svg>
                     </a>
-                    <a href="#" class="contacts__link">
+                    <a href="https://vk.com/redcowspb" rel="nofollow" class="contacts__link" target="_blank">
                         <svg class="contacts__icon">
                             <use xlink:href="resources/svg/sprite.svg#icon-vk"></use>
                         </svg>
@@ -409,9 +450,13 @@
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9eb3478f1ac2678d0bcc88cad057299d3fef096e56d3349cf1de1c95a2f50b9e&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </address>
-    
+
     <footer class="footer">
-        <div class="footer__text">Информация, представленная на сайте kx7.ru, носит информационный характер и ни при каких условиях не является публичной офертой, которая определяется положениями статьи 437 Гражданского кодекса РФ.  Сведения о стоимости, внешнему виду, перечню оказываемых услуг носят информационный характер и не являются окончательными. Для получения более подробной информации обращайтесь по указанным на сайте контактным данным.</div>
+        <div class="footer__text">Информация, представленная на сайте kx7.ru, носит информационный характер и ни при
+            каких условиях не является публичной офертой, которая определяется положениями статьи 437 Гражданского
+            кодекса РФ. Сведения о стоимости, внешнему виду, перечню оказываемых услуг носят информационный характер и
+            не являются окончательными. Для получения более подробной информации обращайтесь по указанным на сайте
+            контактным данным.</div>
         <div class="footer__text">Icon made by Free icons from www.freeicons.io</div>
     </footer>
 
@@ -449,9 +494,8 @@
                 <input type="text" class="booking-form__input" id="id-booking-form__email"
                     placeholder="Электронная почта">
                 <input id="id-control-field">
-                <div class="booking-form__result" id="id-booking-form__result"></div>
-
                 <div class="booking-form__btn" id="id-booking-form__btn">Узнать стоимость</div>
+                <div class="booking-form__result" id="id-booking-form__result"></div>
                 <p class="booking-form__consent">Нажимая кнопку «Бронировать», Вы даете свое согласие на обработку
                     персональных данных в соответствии с <a href="/resources/politika-konfidencialnosti-kx7.ru.pdf"
                         class="booking-form__consent--link" target="_blank">политикой конфиденциальности</a>.</p>

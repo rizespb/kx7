@@ -28,18 +28,22 @@
 
         @media only screen and (max-width: $bp-medium) {
             flex-direction: column;
+            align-items: center;
         }
     }
 
     &__item {
         
         &:not(:last-child) {
-            margin-right: 1rem;
+            margin-right: 2rem;
         }
 
         @media only screen and (max-width: $bp-medium) {
-            margin-right: initial;
             margin-bottom: 2rem;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -62,6 +66,10 @@
         letter-spacing: 1px;
         cursor: pointer;
         transition: all .3s;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3rem;
+        }
 
 
 

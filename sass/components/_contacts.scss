@@ -1,6 +1,11 @@
 .contacts {
     width: 40%;
     font-family: var(--font-display);
+
+    @media only screen and (max-width: $bp-small) {
+        width: 100%;
+    }
+
     
     & > .heading-2 {
         color: var(--color-primary);
@@ -14,6 +19,10 @@
         & > .heading-3 {
             color: var(--color-grey-dark);
         }
+    }
+
+    &__block-text {
+        font-size: 2rem;
     }
 
     &__icon-box {

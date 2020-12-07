@@ -16,10 +16,9 @@
     align-items: center;
 
     // Стиль раскрывает форму на весь экран
-    &--active {
+    &--active { 
         opacity: 1;
         visibility: visible;
-        position: fixed;
     }
 
     &__form-container {
@@ -29,6 +28,14 @@
         background-position: bottom;
         border-radius: 5px;
         padding: 3rem 5rem;
+
+        @media only screen  and (max-width: $bp-medium) {
+            padding: 1rem 1rem;
+        }
+
+        @media only screen  and (max-width: $bp-smallest) {
+            width: 90%;
+        }
     }
 
     &-form {
@@ -39,6 +46,9 @@
 
         transition: all .3s;
 
+        @media only screen  and (max-width: $bp-smallest) {
+           width: 100%;     
+        }
 
         & > *:not(:last-child) {
             margin-bottom: 2rem;
@@ -99,6 +109,7 @@
             &--radio:checked + &--label &--radio-btn::after {
                 opacity: 1;
             }
+
         }
 
         &__input {
@@ -128,11 +139,21 @@
         }
 
         &__consent {
-
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            
             &--link {
                 text-decoration: none;
                 color: inherit;
             }
+        }
+
+        &__result {
+            height: 3rem;
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;  
+            color: var(--color-primary);          
         }
     }
 

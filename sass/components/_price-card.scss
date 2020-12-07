@@ -10,12 +10,12 @@
     transition: all .3s;
     padding: 1.5rem .5rem;
     margin-bottom: 5rem;
-    width: 25rem;
+    width: 27rem;
 
     font-family: var(--font-display);
 
-    &:not(:last-child) {
-        margin-right: 5rem;
+    @media only screen and (max-width: $bp-small) {
+        width: 25rem;
     }
 
     &:hover,
